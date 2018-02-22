@@ -53,7 +53,7 @@ class TriviaHQBot(object):
         print('It took', time.time() - start, 'seconds to run.')
 
     def googleSearch(self, param):
-        payload = {'key': 'AIzaSyBf7KdjtQuSuzg0OGliqqSW8tJiHGbNULE', 'cx': '000931379882558100094:d4p9qmyovqi', 'q': param}
+        payload = {'key': 'ENTER KEY HERE', 'cx': 'ENTER KEY HERE', 'q': param}
         r = requests.get('https://www.googleapis.com/customsearch/v1', params=payload)
         result = r.json()['items']
         resultStrings = ''
